@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PatternFactoryLib
 {
-    public class StorePizza
+    public abstract class StorePizza
     {
-        public Pizza orderPizza(string type)
+        public Pizza OrderPizza(string type)
         {
-            Pizza pizza = FactoryPizza.CreatePizza(type);
+            Pizza pizza = CreatePizza(type);
 
             pizza.Prepare();
             pizza.Bake();
@@ -19,5 +19,7 @@ namespace PatternFactoryLib
 
             return pizza;
         }
+
+        public abstract Pizza CreatePizza(string type);
     }
 }

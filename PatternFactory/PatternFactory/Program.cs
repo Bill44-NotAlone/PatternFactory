@@ -11,23 +11,8 @@ namespace PatternFactory
     {
         static void Main(string[] args)
         {
-            StorePizza store = new StorePizza();
-            Pizza pizza = store.orderPizza("Сырная");
-            Console.WriteLine(pizza.Display());
-            Console.WriteLine("===");
-
-            pizza = store.orderPizza("Веганская");
-            Console.WriteLine(pizza.Display());
-            Console.WriteLine("===");
-
-            pizza = store.orderPizza("Морская");
-            Console.WriteLine(pizza.Display());
-            Console.WriteLine("===");
-
-            pizza = store.orderPizza("Пеперони");
-            Console.WriteLine(pizza.Display());
-            Console.WriteLine("===");
-
+            NowYorkFactory factory = new NowYorkFactory();
+            StorePizza store = new NowYorkPizzaStore(factory);
             Console.ReadLine();
         }
     }

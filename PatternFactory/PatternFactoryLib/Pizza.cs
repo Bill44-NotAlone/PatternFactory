@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatternFactoryLib
 {
-    public abstract class Pizza
+    public class Pizza
     {
         protected string description;
         public string Prepare()
@@ -21,7 +21,10 @@ namespace PatternFactoryLib
         {
             return "Пицца ушла в синую коробку.";
         }
-        public abstract string Cut();
+        public string Cut()
+        {
+            return "Пицца разрезана.";
+        }
 
         public string Display()
         {
