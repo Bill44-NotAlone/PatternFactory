@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace PatternFactoryLib
 {
-    public class ChicagoPizzaFactory
+    public interface IPizzaIngredientFactory
     {
-
+        Dough CreateDough();
+        Sauce CreateSauce();
+        Cheese CreateCheese();
+        Clams CreateClam();
     }
 }

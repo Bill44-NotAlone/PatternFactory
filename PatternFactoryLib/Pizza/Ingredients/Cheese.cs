@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PatternFactoryLib
 {
-    public class ChicagoStyleVeggiePizza : Pizza
+    public class Cheese
     {
+        public string Name;
     }
 }

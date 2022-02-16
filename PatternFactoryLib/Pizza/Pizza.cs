@@ -8,16 +8,13 @@ namespace PatternFactoryLib
 {
     public abstract class Pizza
     {
-        protected string description;
-        protected string name;
-        protected string dough;
-        protected string sauce;
-        protected List<string> toppings = new List<string>();
+        public string Name;
+        public Dough dough;
+        public Sauce sauce;
+        public Cheese cheese;
+        public Clams clam;
 
-        public virtual string Prepare()
-        {
-            return "Питцца приготовлениа.";
-        }
+        public abstract void Prepare();
         public virtual string Bake()
         {
             return "Пицца выпечена.";
@@ -32,11 +29,12 @@ namespace PatternFactoryLib
         }
         public string Display()
         {
-            return $"{description}\n{this.Bake()}\n{this.Prepare()}\n{this.Cut()}\n{this.Box()}";
-        }
-        public string GetName()
-        {
-            return name;
+            string description = Name + "\n";
+            if (dough != null) description = description + dough.Name + "\n";
+            if (sauce != null) description = description + sauce.Name + "\n";
+            if (cheese != null) description = description + cheese.Name + "\n";
+            if (clam != null) description = description + clam.Name + "\n";
+            return description;
         }
     }
 }
