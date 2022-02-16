@@ -11,10 +11,10 @@ namespace PatternFactoryLib
         public override Pizza CreatePizza(string type)
         {
             Pizza pizza = null;
-            if (type == "Сырная") pizza = new NowYorkStyleCheesePizza();
-            if (type == "Пеперонни") pizza = new NowYorkStylePepperoniPizza();
-            if (type == "Морская") pizza = new NowYorkStyleClamPizza();
-            if (type == "Веганская") pizza = new NowYorkStyleVeggiePizza();
+            if (type == "Сырная") pizza = new NewYorkStyleCheesePizza();
+            if (type == "Пеперонни") pizza = new NewYorkStylePepperoniPizza();
+            if (type == "Морская") pizza = new NewYorkStyleClamPizza();
+            if (type == "Веганская") pizza = new NewYorkStyleVeggiePizza();
             return pizza;
         }
     }

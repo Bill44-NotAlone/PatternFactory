@@ -14,7 +14,8 @@ namespace PatternFactoryLib
             if (type == "Сырная") pizza = new ChicagoStyleCheesePizza();
             if (type == "Пеперонни") pizza = new ChicagoStylePepperoniPizza();
             if (type == "Морская") pizza = new ChicagoStyleClamPizza();
-            if (type == "Веганская") pizza = new NowYorkStyleVeggiePizza();
+            if (type == "Веганская") pizza = new ChicagoStyleVeggiePizza();
+
             return pizza;
         }
     }

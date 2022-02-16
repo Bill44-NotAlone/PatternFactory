@@ -11,8 +11,6 @@ namespace PatternFactory
     {
         static void Main(string[] args)
         {
-            NowYorkFactory factory = new NowYorkFactory();
-            StorePizza store = new NowYorkPizzaStore(factory);
             Console.ReadLine();
         }
     }

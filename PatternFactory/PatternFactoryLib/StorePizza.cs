@@ -19,7 +19,6 @@ namespace PatternFactoryLib
 
             return pizza;
         }
-
         public abstract Pizza CreatePizza(string type);
     }
 }

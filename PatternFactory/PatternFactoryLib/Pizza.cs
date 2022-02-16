@@ -6,29 +6,37 @@ using System.Threading.Tasks;
 
 namespace PatternFactoryLib
 {
-    public class Pizza
+    public abstract class Pizza
     {
         protected string description;
-        public string Prepare()
+        protected string name;
+        protected string dough;
+        protected string sauce;
+        protected List<string> toppings = new List<string>();
+
+        public virtual string Prepare()
         {
             return "Питцца приготовлениа.";
         }
-        public string Bake()
+        public virtual string Bake()
         {
             return "Пицца выпечена.";
         }
-        public string Box()
+        public virtual string Box()
         {
             return "Пицца ушла в синую коробку.";
         }
-        public string Cut()
+        public virtual string Cut()
         {
             return "Пицца разрезана.";
         }
-
         public string Display()
         {
             return $"{description}\n{this.Bake()}\n{this.Prepare()}\n{this.Cut()}\n{this.Box()}";
+        }
+        public string GetName()
+        {
+            return name;
         }
     }
 }

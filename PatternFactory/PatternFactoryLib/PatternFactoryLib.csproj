@@ -47,16 +47,16 @@
     <Compile Include="ChicagoStyleClamPizza.cs" />
     <Compile Include="ChicagoStylePepperoniPizza.cs" />
     <Compile Include="ChicagoStyleVeggiePizza.cs" />
-    <Compile Include="NowYorkFactory.cs" />
-    <Compile Include="NowYorkPizzaFactory.cs" />
     <Compile Include="NowYorkPizzaStore.cs" />
-    <Compile Include="NowYorkStyleCheesePizza.cs" />
-    <Compile Include="NowYorkStyleClamPizza.cs" />
-    <Compile Include="NowYorkStylePepperoniPizza.cs" />
-    <Compile Include="NowYorkStyleVeggiePizza.cs" />
+    <Compile Include="StorePizza.cs" />
+    <Compile Include="NewYorkPizzaFactory.cs" />
+    <Compile Include="NewYorkStyleCheesePizza.cs" />
+    <Compile Include="NewYorkStyleClamPizza.cs" />
+    <Compile Include="NewYorkStylePepperoniPizza.cs" />
+    <Compile Include="NewYorkStyleVeggiePizza.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StorePizza.cs" />
+    <Compile Include="DependentStorePizza.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
